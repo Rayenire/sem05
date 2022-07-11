@@ -32,5 +32,5 @@ for (int i = 1; i < array.Length;)
     sum = sum + array[i];
     i = i+2;
 } 
-Console.Write("Сумма нечётных элементов =  ");
+Console.Write("Сумма элементов на нечётных позициях =  ");
 Console.WriteLine(sum);
