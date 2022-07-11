@@ -1,31 +1,11 @@
 ﻿//Задайте массив заполненный случайными положительными трёхзначными числами. 
 //Напишите программу, которая покажет количество чётных чисел в массиве.
 int[] array = new int[20];
-void FillArray(int[] collection)
+for (int i = 0; i < array.Length; i++ )
 {
-    int length = collection.Length;
-    int index = 0;
-    while (index < length)
-    {
-        collection[index] = new Random().Next(100, 1000);
-        index++;
-    }
+    array[i] = new Random().Next(100, 999);
+    Console.Write(array[i] + " ");
 }
-
-void PrintArray(int[] col)
-{
-    int count = col.Length;
-    int position = 0;
-    while (position < count)
-    {
-        Console.WriteLine(col[position]);
-        position++;
-    }
-}
-
-FillArray(array);
-PrintArray(array);
-
 int count = 0;
 for (int i = 0; i < array.Length; i++)
 {
@@ -34,5 +14,6 @@ for (int i = 0; i < array.Length; i++)
         count++;
     }
 } 
-Console.Write("Количество чётных чисел -");
+Console.WriteLine();
+Console.Write("Количество чётных чисел: ");
 Console.WriteLine(count);
