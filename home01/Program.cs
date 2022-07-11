@@ -3,7 +3,7 @@
 int[] array = new int[20];
 for (int i = 0; i < array.Length; i++ )
 {
-    array[i] = new Random().Next(100, 999);
+    array[i] = new Random().Next(100, 1000);
     Console.Write(array[i] + " ");
 }
 int count = 0;
